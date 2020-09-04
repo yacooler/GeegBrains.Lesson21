@@ -63,7 +63,7 @@ public class GasStation{
                     if (machine == null) {
                         semaphore.release();
                         continue;
-                    }
+                    };
 
                     System.out.print(String.format("Колонка %s %s:%s Перезаправляется\n", Thread.currentThread().getName(), machine.machineName, machine.uniqueName));
                     machine.refuel();
